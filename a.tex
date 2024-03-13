@@ -1,0 +1,110 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+% Tema
+\usetheme{Madrid}
+
+% Informações do documento
+\title{O Algoritmo KNN: Um Guia Completo}
+\author{Seu Nome e Outros Autores}
+\date{\today}
+
+\begin{document}
+
+% Slide de título
+\frame{\titlepage}
+
+% Slide 1: Introdução
+\begin{frame}
+\frametitle{Introdução}
+\framesubtitle{O que é o KNN?}
+\begin{itemize}
+    \item Um classificador de aprendizado supervisionado não paramétrico.
+    \item Utiliza a proximidade entre pontos de dados para fazer classificações e previsões.
+    \item É um dos classificadores mais populares e simples em machine learning.
+\end{itemize}
+\end{frame}
+
+% Slide 2: Funcionamento
+\begin{frame}
+\frametitle{Funcionamento}
+\framesubtitle{Classificação e Regressão}
+\begin{columns}
+\column{0.5\textwidth}
+\textbf{Classificação:}
+\begin{itemize}
+    \item Baseia-se na suposição de que pontos semelhantes estão próximos uns dos outros.
+    \item A votação majoritária dos k vizinhos mais próximos determina o rótulo de classe.
+    \item A distância euclidiana é uma medida de proximidade comumente utilizada.
+\end{itemize}
+\column{0.5\textwidth}
+\textbf{Regressão:}
+\begin{itemize}
+    \item A média dos k vizinhos mais próximos é usada para fazer previsões.
+    \item É similar à classificação, mas com valores contínuos.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% Slide 3: Características
+\begin{frame}
+\frametitle{Características}
+\begin{itemize}
+    \item Simples e fácil de entender: Ideal para iniciantes em machine learning.
+    \item Versátil: Pode ser usado para classificação e regressão.
+    \item Eficaz: Pode ser muito preciso em alguns casos.
+    \item Preguiçoso: Armazena o conjunto de dados de treinamento e computa as previsões no momento da classificação.
+\end{itemize}
+\end{frame}
+
+% Slide 4: Limitações
+\begin{frame}
+\frametitle{Limitações}
+\begin{itemize}
+    \item Escalabilidade: Pode ser lento e ineficiente com grandes conjuntos de dados.
+    \item Sensibilidade ao ruído: Pode ser influenciado por valores inconsistentes nos dados.
+    \item Escolha de k: O valor de k pode afetar significativamente o desempenho do modelo.
+\end{itemize}
+\end{frame}
+
+% Slide 5: Aplicações
+\begin{frame}
+\frametitle{Aplicações}
+\begin{itemize}
+    \item Pré-processamento de dados: Imputação de valores ausentes.
+    \item Motores de recomendação: Previsão de conteúdo de interesse para usuários.
+    \item Finanças: Previsão de preços de ações e outras variáveis financeiras.
+    \item Detecção de fraudes: Identificação de transações fraudulentas.
+    \item Reconhecimento de imagem: Classificação de imagens.
+\end{itemize}
+\end{frame}
+
+% Slide 6: Conclusões
+\begin{frame}
+\frametitle{Conclusões}
+\begin{itemize}
+    \item O KNN é um algoritmo fundamental em machine learning com diversas aplicações.
+    \item Possui algumas limitações, mas é uma ferramenta útil para iniciantes e para problemas específicos.
+\end{itemize}
+\end{frame}
+
+% Slide 7: Recursos Adicionais
+\begin{frame}
+\frametitle{Recursos Adicionais}
+\begin{itemize}
+    \item Link para a documentação do scikit-learn sobre o KNN: \url{https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html}
+    \item Artigo sobre o KNN em português: [URL inválido removido]
+    \item Tutorial sobre o KNN com Python: [URL inválido removido]
+\end{itemize}
+\end{frame}
+
+% Slide 8: Agradecimentos
+\begin{frame}
+\frametitle{Agradecimentos}
+\begin{center}
+\Huge Obrigado!
+\end{center}
+\end{frame}
+
+\end{document}
